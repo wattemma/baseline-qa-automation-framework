@@ -1,0 +1,11 @@
+
+export const users = {
+  invalid: {
+    username: 'wrong_user',
+    password: 'wrong_pass',
+  },
+  lockedOut: {
+    username: 'locked_out_user',
+    password: 'secret_sauce',
+  }
+};

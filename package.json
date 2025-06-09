@@ -1,0 +1,19 @@
+{
+  "name": "baseline-qa-automation-framework",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "rm -rf allure-results && npx playwright test && npm run allure:report",
+    "allure:report": "rm -rf allure-report && npx allure generate ./allure-results --clean -o ./allure-report && npx allure open ./allure-report",
+    "test:ci": "rm -rf allure-results && npx playwright test && npx allure generate ./allure-results --clean -o ./allure-report",
+    "report": "npx playwright show-report",
+    "setup": "ts-node scripts/generate-storage.ts"
+  },
+
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "dotenv": "^16.3.1",
+    "@types/node": "^20.0.0",
+    "allure-playwright": "^2.0.0-beta.15",
+    "allure-commandline": "^2.20.1"
+  }
+}

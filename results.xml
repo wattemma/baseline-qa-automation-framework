@@ -1,0 +1,32 @@
+<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="12.13859">
+<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Chromium" tests="1" failures="0" skipped="0" time="0.261" errors="0">
+<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.261">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Chromium" tests="2" failures="0" skipped="0" time="2.246" errors="0">
+<testcase name="@ui @positive › C999 - User can ui with valid credentials" classname="ui/login.spec.ts" time="1.239">
+</testcase>
+<testcase name="@ui @negative › C999 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.007">
+</testcase>
+</testsuite>
+<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="0.263" errors="0">
+<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.263">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Firefox" tests="2" failures="0" skipped="0" time="3.985" errors="0">
+<testcase name="@ui @positive › C999 - User can ui with valid credentials" classname="ui/login.spec.ts" time="2.828">
+</testcase>
+<testcase name="@ui @negative › C999 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.157">
+</testcase>
+</testsuite>
+<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="WebKit" tests="1" failures="0" skipped="0" time="0.221" errors="0">
+<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.221">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="WebKit" tests="2" failures="0" skipped="0" time="2.884" errors="0">
+<testcase name="@ui @positive › C999 - User can ui with valid credentials" classname="ui/login.spec.ts" time="1.699">
+</testcase>
+<testcase name="@ui @negative › C999 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.185">
+</testcase>
+</testsuite>
+</testsuites>

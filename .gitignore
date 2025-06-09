@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Playwright output
+test-results/
+playwright-report/
+storageState-*.json
+
+# Logs and system files
+*.log
+.DS_Store
+
+# Environment configs
+.env
+
+# Coverage reports (if added later)
+coverage/
+
+# IDE/editor folders
+.vscode/
+.idea/

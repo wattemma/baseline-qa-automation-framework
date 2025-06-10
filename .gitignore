@@ -5,6 +5,7 @@ node_modules/
 test-results/
 playwright-report/
 storageState-*.json
+**/results.xml
 
 # Logs and system files
 *.log
@@ -19,3 +20,9 @@ coverage/
 # IDE/editor folders
 .vscode/
 .idea/
+
+# allure reports
+allure-results/
+allure-report/
+allure-results/**/*
+

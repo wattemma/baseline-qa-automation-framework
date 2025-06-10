@@ -23,3 +23,5 @@ coverage/
 # allure reports
 allure-results/
 allure-report/
+allure-results/**/*
+

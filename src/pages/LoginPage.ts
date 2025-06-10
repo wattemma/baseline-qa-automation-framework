@@ -1,37 +1,37 @@
-import { STANDARD_USER, STANDARD_PASS } from "../../utils/env";
-import { Page } from "@playwright/test";
+import { Page, Locator } from "@playwright/test";
 
 export class LoginPage {
-async loginWith(username: string, password: string) {
-    await this.page.fill('#user-name', username);
-    await this.page.fill('#password', password);
-    await this.page.click('//input[@id=\'login-button\']');
-  }
-
-  async getErrorMessage() {
-    return this.page.locator('[data-test="error"]').innerText();
-  }
   readonly page: Page;
-  readonly usernameInput = "#user-name";
-  readonly passwordInput = "#password";
-  readonly loginButton = "//input[@id='login-button']";
-  readonly inventoryContainer = ".inventory_list";
+  readonly usernameInput: Locator;
+  readonly passwordInput: Locator;
+  readonly loginButton: Locator;
+  readonly inventoryContainer: Locator;
+  readonly errorMessage: Locator;
 
   constructor(page: Page) {
     this.page = page;
+    this.usernameInput = page.locator("#user-name");
+    this.passwordInput = page.locator("#password");
+    this.loginButton = page.locator("//input[@id='login-button']");
+    this.inventoryContainer = page.locator(".inventory_list");
+    this.errorMessage = page.locator('[data-test="error"]');
   }
 
-  async goto() {
+  async goto(): Promise<void> {
     await this.page.goto("/");
   }
 
-  async login(username: string, password: string) {
-    await this.page.fill(this.usernameInput, username);
-    await this.page.fill(this.passwordInput, password);
-    await this.page.click(this.loginButton);
+  async login(username: string, password: string): Promise<void> {
+    await this.usernameInput.fill(username);
+    await this.passwordInput.fill(password);
+    await this.loginButton.click();
+  }
+
+  async getErrorMessage(): Promise<string> {
+    return await this.errorMessage.innerText();
   }
 
   async isLoginSuccessful(): Promise<boolean> {
-    return this.page.isVisible(this.inventoryContainer);
+    return await this.inventoryContainer.isVisible();
   }
 }

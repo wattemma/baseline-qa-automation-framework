@@ -5,6 +5,7 @@ node_modules/
 test-results/
 playwright-report/
 storageState-*.json
+**/results.xml
 
 # Logs and system files
 *.log

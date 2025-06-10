@@ -1,32 +1,44 @@
-<testsuites id="" name="" tests="9" failures="0" skipped="0" errors="0" time="12.13859">
-<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Chromium" tests="1" failures="0" skipped="0" time="0.261" errors="0">
-<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.261">
+<testsuites id="" name="" tests="15" failures="0" skipped="0" errors="0" time="15.824836">
+<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-10T15:22:39.021Z" hostname="Chromium" tests="1" failures="0" skipped="0" time="0.278" errors="0">
+<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.278">
 </testcase>
 </testsuite>
-<testsuite name="ui/login.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Chromium" tests="2" failures="0" skipped="0" time="2.246" errors="0">
-<testcase name="@ui @positive › C999 - User can ui with valid credentials" classname="ui/login.spec.ts" time="1.239">
+<testsuite name="ui/login.spec.ts" timestamp="2025-06-10T15:22:39.021Z" hostname="Chromium" tests="4" failures="0" skipped="0" time="3.969" errors="0">
+<testcase name="@ui @positive › QA1 - User can login with valid credentials" classname="ui/login.spec.ts" time="1.215">
 </testcase>
-<testcase name="@ui @negative › C999 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.007">
+<testcase name="@ui @positive › QA2 - User can login and see inventory page" classname="ui/login.spec.ts" time="0.926">
 </testcase>
-</testsuite>
-<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="0.263" errors="0">
-<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.263">
+<testcase name="@ui @negative › QA3 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="0.86">
 </testcase>
-</testsuite>
-<testsuite name="ui/login.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="Firefox" tests="2" failures="0" skipped="0" time="3.985" errors="0">
-<testcase name="@ui @positive › C999 - User can ui with valid credentials" classname="ui/login.spec.ts" time="2.828">
-</testcase>
-<testcase name="@ui @negative › C999 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.157">
+<testcase name="@ui @negative › QA4 - User sees error with valid username invalid password" classname="ui/login.spec.ts" time="0.968">
 </testcase>
 </testsuite>
-<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="WebKit" tests="1" failures="0" skipped="0" time="0.221" errors="0">
-<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.221">
+<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-10T15:22:39.021Z" hostname="Firefox" tests="1" failures="0" skipped="0" time="0.276" errors="0">
+<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.276">
 </testcase>
 </testsuite>
-<testsuite name="ui/login.spec.ts" timestamp="2025-06-09T22:30:06.213Z" hostname="WebKit" tests="2" failures="0" skipped="0" time="2.884" errors="0">
-<testcase name="@ui @positive › C999 - User can ui with valid credentials" classname="ui/login.spec.ts" time="1.699">
+<testsuite name="ui/login.spec.ts" timestamp="2025-06-10T15:22:39.021Z" hostname="Firefox" tests="4" failures="0" skipped="0" time="6.902" errors="0">
+<testcase name="@ui @positive › QA1 - User can login with valid credentials" classname="ui/login.spec.ts" time="3.466">
 </testcase>
-<testcase name="@ui @negative › C999 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.185">
+<testcase name="@ui @positive › QA2 - User can login and see inventory page" classname="ui/login.spec.ts" time="1.254">
+</testcase>
+<testcase name="@ui @negative › QA3 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="1.154">
+</testcase>
+<testcase name="@ui @negative › QA4 - User sees error with valid username invalid password" classname="ui/login.spec.ts" time="1.028">
+</testcase>
+</testsuite>
+<testsuite name="api/sample-api.spec.ts" timestamp="2025-06-10T15:22:39.021Z" hostname="WebKit" tests="1" failures="0" skipped="0" time="0.211" errors="0">
+<testcase name="Sample API Test - Status 200 from example endpoint" classname="api/sample-api.spec.ts" time="0.211">
+</testcase>
+</testsuite>
+<testsuite name="ui/login.spec.ts" timestamp="2025-06-10T15:22:39.021Z" hostname="WebKit" tests="4" failures="0" skipped="0" time="5.078" errors="0">
+<testcase name="@ui @positive › QA1 - User can login with valid credentials" classname="ui/login.spec.ts" time="2.048">
+</testcase>
+<testcase name="@ui @positive › QA2 - User can login and see inventory page" classname="ui/login.spec.ts" time="1.106">
+</testcase>
+<testcase name="@ui @negative › QA3 - User sees error with invalid credentials" classname="ui/login.spec.ts" time="0.99">
+</testcase>
+<testcase name="@ui @negative › QA4 - User sees error with valid username invalid password" classname="ui/login.spec.ts" time="0.934">
 </testcase>
 </testsuite>
 </testsuites>

@@ -9,7 +9,7 @@ This framework is ready for future integration with Jira and Xray.
 
 ---
 
-## When You're Ready to Integrate
+## When Ready to Integrate
 
 ### 1. Enable GitHub Actions
 Add `.github/workflows/playwright.yml`:
